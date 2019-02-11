@@ -5,10 +5,14 @@ import jobFactory from "./factory.js";
 
 const listEl = document.querySelector("#lister");
 
-const showAllJobs () => {
-    getJobs().then(
-        jobArray.forEach(element => {
+const showAllJobs = () => {
+    getJobs()
+    .then(resultObject => {
+        let jobArray = resultObject.results;
+        jobArray.reverse().forEach(element => {
             listEl.innerHTML += jobFactory(element);
         })
-    )
+    })
 }
+
+export default showAllJobs;

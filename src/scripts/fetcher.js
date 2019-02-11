@@ -2,7 +2,7 @@
 
 const getJobs = () => {
     return fetch("https://api.stevebrownlee.com/jobs/")
-        .then(res => res.json());
+    .then(res => res.json());
 };
 
-export getJobs;
+export default getJobs;

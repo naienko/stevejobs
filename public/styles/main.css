@@ -1,0 +1,9 @@
+#lister {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+section {
+    flex-basis: 30%;
+}
